@@ -1,0 +1,233 @@
+/* --- GLOBAIS --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 70%);
+    --Purple-500: hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 95%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+    --Shadow: hsla(0, 0%, 7%, 0.1);
+}
+
+/* --- MOBILE --- */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0); 
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body {
+    background-color: var(--Grey);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 2rem;
+    min-height: 100vh;
+}
+
+.cards-depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 30px 60px 30px var(--Shadow);
+    z-index: 1;
+    transition: filter 0.3s ease;
+}
+
+.card:hover {
+    filter: brightness(1.1);
+}
+
+.cartao-depoimento {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cartao-depoimento img {
+    border-radius: 100%;
+    width: 30px;
+}
+
+.texto-depoimento {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+/* --- COLOR-CARDS --- */
+
+
+.card-depoimento-1 {
+    background-color: var(--Purple-500);
+    color: var(--Purple-50);
+}
+
+.card-depoimento-2 {
+    background-color: var(--Grey-500);
+    color: var(--White);
+}
+
+.card-depoimento-2 .status {
+    color: var(--Grey-200);
+}
+
+
+
+.card-depoimento-3,
+.card-depoimento-5 {
+    background-color: var(--White);
+    color: var(--Grey-500);
+}
+
+.card-depoimento-4 {
+    background-color: var(--Dark-blue);
+    color: var(--Grey-200);
+}
+
+
+/* --- BORDERS-CARTA0-DEPOIMENTOS-IMG --- */
+
+.card-depoimento-1 img {
+    border: 2px solid var(--Purple-300);
+}
+
+
+.card-depoimento-4 img {
+    border: 2px solid var(--Purple-500);
+}
+
+
+/* --- FONTS --- */
+
+.autor {
+    font-size: 0.82rem;
+    font-weight: 400;
+}
+
+.status {
+    font-size: 0.68rem;
+    font-weight: 400;
+}
+
+.destaque {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+blockquote {
+    font-size: 0.82rem;
+    line-height: 140%;
+    word-spacing: 1px;
+    font-weight: 400;
+}
+
+
+/* --- TABLETS --- */
+
+
+@media (min-width: 48rem) {
+
+    body{
+        margin: 4rem 3rem;
+    }
+    .cards-depoimentos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        grid-template-areas:
+            "card1 card1"
+            "card2 card3"
+            "card4 card4"
+            "card5 card5";
+    }
+
+    /* --- DECLARAÇÃO DE ÁREAS --- */
+
+    .card-depoimento-1 {
+        grid-area: card1;
+        position: relative;
+    }
+
+    .card-depoimento-2 {
+        grid-area: card2;
+    }
+
+    .card-depoimento-3 {
+        grid-area: card3;
+    }
+
+    .card-depoimento-4 {
+        grid-area: card4;
+    }
+
+    .card-depoimento-5 {
+        grid-area: card5;
+    }
+
+
+    .card-depoimento-1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 70%;
+        width: 10rem;
+        height: 6.5rem;
+        background-image: url(./images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+    }
+
+    .card-depoimento-1 .destaque,
+    .card-depoimento-1 blockquote {
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
+
+/* --- DESKTOPS --- */
+
+
+@media (min-width: 62.5rem) {
+    .cards-depoimentos-container {
+        max-width: 70rem;
+        width: 100%;
+        row-gap: 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card5"
+            "card3 card4 card4 card5";
+    }
+}
