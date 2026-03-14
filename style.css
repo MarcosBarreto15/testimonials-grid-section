@@ -90,6 +90,30 @@ article{
     gap: 0.125rem;
 }
 
+/* --- FONTS --- */
+
+.autor {
+    font-size: 0.82rem;
+    font-weight: 400;
+}
+
+.status {
+    font-size: 0.68rem;
+    font-weight: 400;
+}
+
+.destaque {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+blockquote {
+    font-size: 0.82rem;
+    line-height: 140%;
+    word-spacing: 0.0625rem;
+    font-weight: 400;
+}
+
 /* --- COLOR-CARDS --- */
 
 
@@ -130,31 +154,6 @@ article{
 
 .card-depoimento-4 img {
     border: 0.125rem solid var(--Purple-500);
-}
-
-
-/* --- FONTS --- */
-
-.autor {
-    font-size: 0.82rem;
-    font-weight: 400;
-}
-
-.status {
-    font-size: 0.68rem;
-    font-weight: 400;
-}
-
-.destaque {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-blockquote {
-    font-size: 0.82rem;
-    line-height: 140%;
-    word-spacing: 0.0625rem;
-    font-weight: 400;
 }
 
 
