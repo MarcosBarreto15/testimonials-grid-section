@@ -46,6 +46,12 @@ body {
     padding: 2rem;
 }
 
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;;
+}
+
 .cards-depoimentos-container {
     list-style: none;
     padding: 0;
@@ -65,10 +71,12 @@ body {
     z-index: 1;
 }
 
+
 .cartao-depoimento {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center
 }
 
 .cartao-depoimento img {
@@ -155,9 +163,6 @@ blockquote {
 
 @media (min-width: 48rem) {
 
-    body{
-        margin: 4rem 3rem;
-    }
     .cards-depoimentos-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

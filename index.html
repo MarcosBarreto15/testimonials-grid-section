@@ -8,8 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Testimonials</title>
   <link rel="stylesheet" href="./style.css">
@@ -25,12 +25,13 @@
     <ul class="cards-depoimentos-container">
       
       
-      <li class="card-depoimento-1">
-        <article class="card">
+      <li class="card card-depoimento-1">
+        <h2 class="sr-only">Daniel Clifford</h2>
+        <article class="card-autor">
           <figure class="cartao-depoimento">
             <img src="./images/image-daniel.jpg" alt="Daniel Clifford" class="foto-depoimento">
             <figcaption class="texto-depoimento">
-              <h2 class="autor" id="autor-daniel">Daniel Clifford</h2>
+              <span class="autor" id="autor-daniel">Daniel Clifford</span>
               <span class="status">Verified Graduate</span>
             </figcaption>
           </figure>
@@ -39,7 +40,7 @@
             I received a job offer mid-course, and the subjects I learned were current, if not more so,
             in the company I joined. I honestly feel I got every penny’s worth.
           </p>
-          <blockquote cite="#autor-daniel">
+          <blockquote aria-labelledby="autor-daniel">
             <p>
               “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
               transition and have heard some people who had an amazing experience here. I signed up
@@ -51,19 +52,20 @@
         </article>
       </li>
 
-      <li class="card-depoimento-2">
-        <article class="card">
+      <li class="card card-depoimento-2">
+        <h2 class="sr-only">Jonathan Walters</h2>
+        <article class="card-autor">
           <figure class="cartao-depoimento">
             <img src="./images/image-jonathan.jpg" alt="Jonathan Walters" class="foto-depoimento">
             <figcaption class="texto-depoimento">
-              <h2 class="autor" id="autor-jonathan">Jonathan Walters</h2>
+              <span class="autor">Jonathan Walters</span>
               <span class="status">Verified Graduate</span>
             </figcaption>
           </figure>
           <p class="destaque">
             The team was very supportive and kept me motivated
           </p>
-          <blockquote cite="#autor-jonathan">
+          <blockquote aria-labelledby="autor-jonathan">
             <p>
               “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
               for a big company. This was one of the best investments I’ve made in myself. ”
@@ -72,8 +74,9 @@
         </article>
       </li>
 
-      <li class="card-depoimento-3">
-        <article class="card">
+      <li class="card card-depoimento-3">
+        <h2 class="sr-only">Jeanette Harmon</h2>
+        <article class="card-autor">
           <figure class="cartao-depoimento">
             <img src="./images/image-jeanette.jpg" alt="Jeanette Harmon" class="foto-depoimento">
             <figcaption class="texto-depoimento">
@@ -84,7 +87,7 @@
           <p class="destaque">
             An overall wonderful and rewarding experience
           </p>
-          <blockquote cite="#autor-jeanette">
+          <blockquote aria-labelledby="autor-jeanette">
             <p>
               “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
               while doing something I love. ”
@@ -93,8 +96,9 @@
         </article>
       </li>
 
-      <li class="card-depoimento-4">
-        <article class="card">
+      <li class="card card-depoimento-4">
+        <h2 class="sr-only">Patrick Abrams</h2>
+        <article class="card-autor">
           <figure class="cartao-depoimento">
             <img src="./images/image-patrick.jpg" alt="Patrick Abrams" class="foto-depoimento">
             <figcaption class="texto-depoimento">
@@ -106,7 +110,7 @@
             Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
             learning from their experiences was easy.
           </p>
-          <blockquote cite="#autor-patrick">
+          <blockquote aria-labelledby="autor-patrick">
             <p>
               “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
               gave me the confidence necessary to be able to go out in the world and present myself as a capable
@@ -117,8 +121,9 @@
         </article>
       </li>
 
-      <li class="card-depoimento-5">
-        <article class="card">
+      <li class="card card-depoimento-5">
+        <h2 class="sr-only">Kira Whittle</h2>
+        <article class="card-autor">
           <figure class="cartao-depoimento">
             <img src="./images/image-kira.jpg" alt="Kira Whittle" class="foto-depoimento">
             <figcaption class="texto-depoimento">
@@ -129,7 +134,7 @@
           <p class="destaque">
             Such a life-changing experience. Highly recommended!
           </p>
-          <blockquote cite="#autor-kira">
+          <blockquote aria-labelledby="autor-kira">
             <p>
               “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
               professionals who can help me learn programming step by step. I was encouraged to enroll by a former
