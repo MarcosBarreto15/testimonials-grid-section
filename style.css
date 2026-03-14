@@ -25,10 +25,10 @@
 
 .sr-only {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0); 
     white-space: nowrap;
@@ -39,11 +39,11 @@ body {
     background-color: var(--Grey);
     font-family: "Barlow Semi Condensed", sans-serif;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 2rem;
-    min-height: 100vh;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    margin: 0;               
+    padding: 2rem;
 }
 
 .cards-depoimentos-container {
@@ -54,17 +54,12 @@ body {
 
 .card {
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    box-shadow: 30px 60px 30px var(--Shadow);
+    box-shadow: 2rem 4rem 2rem var(--Shadow);
     z-index: 1;
-    transition: filter 0.3s ease;
-}
-
-.card:hover {
-    filter: brightness(1.1);
 }
 
 .cartao-depoimento {
@@ -75,7 +70,7 @@ body {
 
 .cartao-depoimento img {
     border-radius: 100%;
-    width: 30px;
+    width: 2rem;
 }
 
 .texto-depoimento {
@@ -118,12 +113,12 @@ body {
 /* --- BORDERS-CARTA0-DEPOIMENTOS-IMG --- */
 
 .card-depoimento-1 img {
-    border: 2px solid var(--Purple-300);
+    border: 0.125rem solid var(--Purple-300);
 }
 
 
 .card-depoimento-4 img {
-    border: 2px solid var(--Purple-500);
+    border: 0.125rem solid var(--Purple-500);
 }
 
 
@@ -147,7 +142,7 @@ body {
 blockquote {
     font-size: 0.82rem;
     line-height: 140%;
-    word-spacing: 1px;
+    word-spacing: 0.0625rem;
     font-weight: 400;
 }
 
@@ -220,7 +215,7 @@ blockquote {
 /* --- DESKTOPS --- */
 
 
-@media (min-width: 62.5rem) {
+@media (min-width: 65rem) {
     .cards-depoimentos-container {
         max-width: 70rem;
         width: 100%;
